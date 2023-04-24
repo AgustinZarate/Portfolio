@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
   justify-content: space-around;
   align-items: center;
   z-index: 10000;
+  backdrop-filter: blur(20px);
 }
 header .logo {
   position: relative;
@@ -39,21 +41,86 @@ header ul li a {
   font-size: 1.25em;
 }
 header ul li a:hover {
-  color: #30fe6c;
+  color: #e56b6f;
 }
 header ul .active a {
-  color: #30fe6c;
+  color: #e56b6f;
 }
 
-/*     header ul li.active a {
-
-    }
- */
 main #inicio {
-  background: #222;
+  background: #355070;
   position: relative;
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+main #inicio .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 650px;
+  z-index: 10;
+}
+main #inicio .content h2 {
+  position: relative;
+  font-size: 5em;
+  color: #e56b6f;
+}
+main #inicio .content p {
+  position: relative;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+main #inicio img {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  max-height: 80vh;
+}
+main #inicio::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  height: 25vw;
+  background-color: #e56b6f;
+  border-top-right-radius: 25vw;
+  border-top-left-radius: 25vw;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1.25em;
+  background: #e56b6f;
+  color: #355070;
+  text-align: center;
+  padding: 18px 30px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  margin-top: 10px;
+  width: 50%;
+}
+
+#servicios, #contacto {
+  position: relative;
+  background-color: #6d597a;
+  min-height: 100vh;
+  padding: 120px 100px;
+}
+
+#portfolio {
+  background-color: #355070;
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
