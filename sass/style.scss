@@ -211,3 +211,24 @@ main {
     }
 }
 
+.orbita {
+    animation: orbita 6s infinite linear;
+}
+
+@keyframes orbita {
+    0% {
+        transform: translate(50px, 0) rotate(5deg);
+      }
+      25% {
+        transform: translate(0, 50px) rotate(-5deg);
+      }
+      50% {
+        transform: translate(-50px, 0) rotate(5deg);
+      }
+      75% {
+        transform: translate(0, -50px) rotate(-5deg);
+      }
+      100% {
+        transform: translate(50px, 0) rotate(5deg);
+      }
+}
