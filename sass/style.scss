@@ -212,7 +212,6 @@ main {
 #portfolio {
     background-color: $primary-color;
     text-align: center;
-
         .content {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -225,6 +224,51 @@ main {
                         }
                 }
         }
+}
+
+
+#contacto {
+    .content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        margin: 40px 0;
+            a {
+                background-color: $acent-color;
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                font-size: 1.2em;
+                color: #fff;
+                transition: 0.5s;
+                    svg {
+                        color: $primary-color;
+                        font-size: 1.5em;
+                        margin-right: 10px;
+                        transition: 0.5s;
+                        &:hover  {
+                            color: $secondary-color;
+                        }
+                    }
+
+            }
+            &:hover {
+                background-color: $secondary-color;
+            }
+
+    }
+    .center {
+        .copyrights {
+            margin-top: 150px;
+            position: relative;
+            color: #aaa;
+            font-size: 1.1em;
+                a {
+                    color: $primary-color;
+                }
+        }
+    }
 }
 
 .orbita {
