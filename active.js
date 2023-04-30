@@ -13,3 +13,8 @@ list.forEach((i) => {
   });
 });
 
+let menuToggle = document.querySelector('.menuToggle');
+let header = document.querySelector('header');
+menuToggle.addEventListener('click', function() {
+  header.classList.toggle('active');
+});
