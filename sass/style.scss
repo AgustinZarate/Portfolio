@@ -8,13 +8,13 @@
     scroll-behavior: smooth;
 }
 
-
-$primary-color :  #1D3557;
-$secondary-color: #E63946;
-$acent-color: #EEF4D4;
-$other-color-1: #825b96;
+$primary-color :  #1F363D;
+$secondary-color: #70A9A1;
+$acent-color: #FBF9FF;
+$other-color-1: #40798C;
 $other-color-3: #A8DADC;
 $other-color-2: #457B9D;
+
 header {
     position: fixed;
     left: 0;
@@ -81,7 +81,7 @@ main {
                 h2 {
                     position: relative;
                     font-size: 5em;
-                    color: $secondary-color;
+                    color: $acent-color;
                 }
                 p {
                     position: relative;
@@ -128,15 +128,13 @@ main {
 
 #servicios, #contacto, #portfolio {
     position: relative;
-    background-color: $acent-color;
+    background-color: $other-color-1;
     min-height: 100vh;
     padding: 120px 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
-
 
 .secText {
     position: relative;
@@ -146,13 +144,13 @@ main {
     flex-direction: column;
         h2 {
             font-size: 3em;
-            color: $secondary-color;
+            color: $other-color-3;
         }
 
         p {
             max-width: 700px;
             text-align: center;
-            color: $primary-color;
+            color: $acent-color;
             font-size: 1.1em;
             line-height: 1.5em;
         }
@@ -233,25 +231,25 @@ main {
         grid-gap: 20px;
         margin: 40px 0;
             a {
-                background-color: $primary-color;
+                background-color: $secondary-color;
                 height: 120px;
                 display: flex;
                 justify-content: center;
                 text-decoration: none;
                 font-size: 15px;
-                color: #fff;
+                color: $acent-color;
                 transition: 0.5s;
                 align-items: center;
                     ion-icon {
-                        color: $secondary-color;
+                        color: $primary-color;
                         font-size: 1.7rem;
                         margin-right: 5px;
                         transition: 0.5s;
                     }
                     &:hover {
-                        background-color: $secondary-color;
+                        background-color: $primary-color;
                         ion-icon {
-                            color: $primary-color;
+                            color: $secondary-color;
                         }
                     }
             }
@@ -262,7 +260,7 @@ main {
             text-align: center;
             margin-top: 150px;
             position: relative;
-            color: #aaa;
+            color: $acent-color;
             font-size: 1.1em;
                 a {
                     color: $primary-color;
@@ -336,7 +334,7 @@ main {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     header {
         ul {
             display: none;
