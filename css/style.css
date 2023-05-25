@@ -21,11 +21,11 @@ header {
 }
 header .logo {
   position: relative;
-  color: #EEF4D4;
+  color: #FBF9FF;
   text-decoration: none;
   font-weight: 700;
   font-size: 2em;
-  text-shadow: 0 0 10px #1D3557;
+  text-shadow: 0 0 10px #1F363D;
 }
 header ul {
   position: relative;
@@ -37,20 +37,20 @@ header ul li {
 }
 header ul li a {
   text-decoration: none;
-  color: #EEF4D4;
+  color: #FBF9FF;
   font-weight: 500;
   font-size: 1.25em;
-  text-shadow: 0 0 20px #1D3557;
+  text-shadow: 0 0 20px #1F363D;
 }
 header ul li a:hover {
-  color: #E63946;
+  color: #70A9A1;
 }
 header ul .active a {
-  color: #E63946;
+  color: #70A9A1;
 }
 
 main #inicio {
-  background: #1D3557;
+  background: #1F363D;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -70,11 +70,11 @@ main #inicio .content {
 main #inicio .content h2 {
   position: relative;
   font-size: 5em;
-  color: #E63946;
+  color: #FBF9FF;
 }
 main #inicio .content p {
   position: relative;
-  color: #EEF4D4;
+  color: #FBF9FF;
   font-size: 1.2em;
   line-height: 1.6em;
 }
@@ -91,7 +91,7 @@ main #inicio::before {
   right: 0;
   width: 50vw;
   height: 25vw;
-  background-color: #E63946;
+  background-color: #70A9A1;
   border-top-right-radius: 25vw;
   border-top-left-radius: 25vw;
 }
@@ -100,8 +100,8 @@ main #inicio::before {
   position: relative;
   display: inline-block;
   font-size: 1.25em;
-  background: #E63946;
-  color: #1D3557;
+  background: #70A9A1;
+  color: #1F363D;
   text-align: center;
   padding: 18px 30px;
   font-weight: 500;
@@ -113,7 +113,7 @@ main #inicio::before {
 
 #servicios, #contacto, #portfolio {
   position: relative;
-  background-color: #EEF4D4;
+  background-color: #40798C;
   min-height: 100vh;
   padding: 120px 100px;
   display: flex;
@@ -130,12 +130,12 @@ main #inicio::before {
 }
 .secText h2 {
   font-size: 3em;
-  color: #E63946;
+  color: #A8DADC;
 }
 .secText p {
   max-width: 700px;
   text-align: center;
-  color: #1D3557;
+  color: #FBF9FF;
   font-size: 1.1em;
   line-height: 1.5em;
 }
@@ -147,19 +147,19 @@ main #inicio::before {
   margin: 40px 0;
 }
 #servicios .content .servicesBx {
-  background-color: #E63946;
+  background-color: #1F363D;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  border: 2px solid #E63946;
+  border: 2px solid #70A9A1;
   border-radius: 75px;
   text-align: center;
 }
 #servicios .content .servicesBx:hover {
-  border: 2px solid #EEF4D4;
+  border: 2px solid #FBF9FF;
 }
 #servicios .content .servicesBx:hover img {
   filter: invert(1) drop-shadow(0 2px 5px white);
@@ -175,7 +175,7 @@ main #inicio::before {
   transition: 0.5s;
 }
 #servicios .content .servicesBx h3 {
-  color: #EEF4D4;
+  color: #FBF9FF;
   font-weight: 500;
 }
 #servicios .center {
@@ -185,11 +185,11 @@ main #inicio::before {
   grid-row: 2;
 }
 #servicios .center .btn {
-  color: #EEF4D4;
+  color: #FBF9FF;
 }
 
 #portfolio {
-  background-color: #1D3557;
+  background-color: #1F363D;
   text-align: center;
 }
 #portfolio .content {
@@ -212,37 +212,37 @@ main #inicio::before {
   margin: 40px 0;
 }
 #contacto .content a {
-  background-color: #1D3557;
+  background-color: #70A9A1;
   height: 120px;
   display: flex;
   justify-content: center;
   text-decoration: none;
   font-size: 15px;
-  color: #fff;
+  color: #FBF9FF;
   transition: 0.5s;
   align-items: center;
 }
 #contacto .content a ion-icon {
-  color: #E63946;
+  color: #1F363D;
   font-size: 1.7rem;
   margin-right: 5px;
   transition: 0.5s;
 }
 #contacto .content a:hover {
-  background-color: #E63946;
+  background-color: #1F363D;
 }
 #contacto .content a:hover ion-icon {
-  color: #1D3557;
+  color: #70A9A1;
 }
 #contacto .center .copyrights {
   text-align: center;
   margin-top: 150px;
   position: relative;
-  color: #aaa;
+  color: #FBF9FF;
   font-size: 1.1em;
 }
 #contacto .center .copyrights a {
-  color: #1D3557;
+  color: #1F363D;
 }
 
 .orbita {
@@ -301,7 +301,7 @@ main #inicio::before {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   header ul {
     display: none;
   }
@@ -377,6 +377,13 @@ main #inicio::before {
 
   #servicios .content, #portfolio .content, #contacto .content {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .secText {
+    max-width: 260px;
+  }
+  .secText p {
+    text-align: start;
   }
 
   #contacto .content a {
