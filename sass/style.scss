@@ -293,7 +293,7 @@ main {
 
 @media (max-width: 900px) {
     header {
-        padding: 20px 50px;
+        padding: 15px 0px;
     }
     #inicio {
         padding: 150px 50px;
@@ -301,7 +301,7 @@ main {
         padding-bottom: 0;
             .content{
                 h2 {
-                    font-size: 4em !important;
+                    font-size: 4em;
                 }
             }
             img {
@@ -311,8 +311,8 @@ main {
             }
         }
     .btn {
-            max-width: 185px;
-        }
+        max-width: 220px;
+    }
 
     #servicios {
         .content {
@@ -401,6 +401,7 @@ main {
     }
 
     #inicio {
+        padding: 60px;
         .content {
             .h2 {
                 font-size: 3em;
@@ -425,7 +426,6 @@ main {
     }
 
         .secText {
-            max-width: 260px;
             p {
                 text-align: start;
             }
