@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="ico" href="img/favicon.ico">
+    <!-- Email JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('kZzKkWD5fi82_wymp')</script>
     <title>Portfolio Agustin F. Zarate</title>
 </head>
 <body>
@@ -156,6 +159,24 @@
                     LinkedIn
                 </a>
             </div>
+            <!-- Email JS -->
+            <form id="form">
+                <div class="field">
+                  <label for="from_name">from_name</label>
+                  <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                  <label for="message">message</label>
+                  <input type="text" name="message" id="message">
+                </div>
+                <div class="field">
+                  <label for="email_id">email_id</label>
+                  <input type="text" name="email_id" id="email_id">
+                </div>
+                <input type="submit" id="button" value="Send Email" >
+              </form>
+
+
             <div class="center">
                 <div class="copyrights">Copyright @ 2023 <a href="#"> Agustin Zarate</a>. Todos los derechos reservados</div>
             </div>
@@ -166,5 +187,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="active.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
