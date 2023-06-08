@@ -15,7 +15,23 @@ $other-color-1: #40798C;
 $other-color-3: #A8DADC;
 $other-color-2: #457B9D;
 
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+      backdrop-filter: blur(0); /* Desenfoque inicial a 0 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      backdrop-filter: blur(20px); /* Desenfoque completo */
+    }
+  }
+
 header {
+    opacity: 0; /* Establece la opacidad inicial del encabezado a 0 */
+    transform: translateX(-100%); /* Mueve el encabezado fuera de la pantalla hacia la izquierda */
+    animation: slideIn 2s forwards; /* Aplica una animación de deslizamiento con una duración de 2 segundos */
     position: fixed;
     left: 0;
     top: 0;
@@ -25,7 +41,8 @@ header {
     justify-content: space-around;
     align-items: center;
     z-index: 10000;
-    backdrop-filter: blur(20px);
+    background: linear-gradient(to right, #1F363D, transparent); /* Fondo con gradiente lineal de izquierda a derecha */
+    backdrop-filter: blur(0); /* Establece el desenfoque inicial a 0 */
         .logo{
             position: relative;
             color: $acent-color;
@@ -63,20 +80,6 @@ header {
     }
 main {
     #inicio {
- /*        
-        @keyframes circle-in-center {
-            from {
-              clip-path: circle(0%);
-            }
-            to {
-              clip-path: circle(125%);
-            }
-          }
-          
-          [transition-style="in:circle:center"] {
-            animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
-          }
-        */
         background: $primary-color;
         position: relative;
         width: 100%;
