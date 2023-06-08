@@ -221,6 +221,7 @@ main #inicio::before {
   color: #FBF9FF;
   transition: 0.5s;
   align-items: center;
+  padding: 0 10px;
 }
 #contacto .content a ion-icon {
   color: #1F363D;
@@ -233,6 +234,34 @@ main #inicio::before {
 }
 #contacto .content a:hover ion-icon {
   color: #70A9A1;
+}
+#contacto .content form {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+#contacto .content form .field {
+  display: flex;
+  flex-direction: column;
+}
+#contacto .content form .field .label {
+  font-weight: bold;
+}
+#contacto .content form .field .input {
+  padding: 10px;
+  font-size: 16px;
+}
+#contacto .content form #button-send {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #eaeaea;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  #contacto .content form {
+    grid-template-columns: 1fr;
+  }
 }
 #contacto .center .copyrights {
   text-align: center;
@@ -268,7 +297,7 @@ main #inicio::before {
 }
 @media (max-width: 900px) {
   header {
-    padding: 15px 0px;
+    padding: 21px 0px;
   }
 
   #inicio {

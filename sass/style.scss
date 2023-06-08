@@ -240,6 +240,7 @@ main {
                 color: $acent-color;
                 transition: 0.5s;
                 align-items: center;
+                padding: 0 10px;
                     ion-icon {
                         color: $primary-color;
                         font-size: 1.7rem;
@@ -253,8 +254,34 @@ main {
                         }
                     }
             }
-
+    form {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        .field {
+            display: flex;
+            flex-direction: column;
+            .label {
+                font-weight: bold;
+              }
+              .input {
+                padding: 10px;
+                font-size: 16px;
+              }
+          }
+          #button-send {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #eaeaea;
+            border: none;
+            cursor: pointer;
+          }
+          
+        @media screen and (max-width: 600px) {
+          grid-template-columns: 1fr;
+        }
     }
+}
     .center {
         .copyrights {
             text-align: center;
@@ -333,6 +360,8 @@ main {
     }
 
 }
+
+
 
 @media (max-width: 700px) {
     header {
