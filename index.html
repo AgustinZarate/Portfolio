@@ -55,7 +55,7 @@
                         </svg>
                     </a>
                 </p>
-                    <a href="#" class="btn">Contacto</a>
+                    <a href="#contacto" class="btn">Contacto</a>
             </div>
             <img class="orbita" src="img/astronauta.png" alt="foto perfil">
         </section>
@@ -144,19 +144,19 @@
                 </p>
             </div>
             <div class="content">
-                <a href="#">
+                <a href="#form">
                     <ion-icon name="mail-outline"></ion-icon>
                     zarateagustin3@gmail.com
                 </a>
-                <a href="#">
+                <a href="https://wa.me/1122801186" target="_blank">
                     <ion-icon name="logo-whatsapp"></ion-icon>
                     11 2280 1186
                 </a>
-                <a href="#">
+                <a href="https://github.com/AgustinZarate" target="_blank">
                     <ion-icon name="git-branch-outline"></ion-icon>
                     Github
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/agustinzarate/" target="_blank">
                     <ion-icon name="globe-outline"></ion-icon>
                     LinkedIn
                 </a>
@@ -164,18 +164,18 @@
             <!-- Email JS -->
             <form id="form">
                 <div class="field">
-                    <label for="from_name">Nombre Completo</label>
-                    <input type="text" name="from_name" id="from_name">
-                </div>
-                <div class="field">
-                  <label for="email_id">Email</label>
-                  <input type="text" name="email_id" id="email_id">
+                  <label for="from_name">Nombre</label>
+                  <input type="text" name="from_name" id="from_name">
                 </div>
                 <div class="field">
                   <label for="message">Mensaje</label>
                   <input type="text" name="message" id="message">
                 </div>
-                <input type="submit" id="button-send" value="Enviar" >
+                <div class="field">
+                  <label for="email_id">Email</label>
+                  <input type="text" name="email_id" id="email_id">
+                </div>
+                <input type="submit" id="button" value="Send Email" >
               </form>
 
 
@@ -184,11 +184,19 @@
             </div>
         </section>
     </main>
+
     
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="active.js"></script>
-    <script src="form.js"></script>
+
+    <!-- email js -->
+    <script type="form.js"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+    <script src="form.js">
+        emailjs.init('ZERizgv0MuLRTZGy4HjON')
+    </script>
 </body>
 </html>
